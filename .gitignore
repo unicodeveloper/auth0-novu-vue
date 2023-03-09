@@ -730,6 +730,8 @@ dist-ssr
 /cypress/videos/
 /cypress/screenshots/
 
+package-lock.json
+
 
 # dependencies
 /server/node_modules

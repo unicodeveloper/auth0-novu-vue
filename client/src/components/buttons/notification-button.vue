@@ -18,10 +18,10 @@
 export default {
   data() {
     return {
-      applicationIdentifier: "wLXel7MBnUEt",
+      applicationIdentifier: import.meta.env.VITE_NOVU_APP_IDENTIFIER,
       subscriberId: "on-boarding-subscriber-id-123",
-      backendUrl: "https://dev.api.novu.co",
-      socketUrl: "wss://dev.ws.novu.co",
+      backendUrl: import.meta.env.VITE_NOVU_API_SERVER_URL,
+      socketUrl: import.meta.env.VITE_WEBSOCKET_URL,
       message: "",
       popover: "bottom-start",
       styles: {

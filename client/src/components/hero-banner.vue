@@ -47,7 +47,10 @@ export default {
   },
   methods: {
     triggerNotification() {
-      fetch("http://localhost:3002/api/trigger-notification", {
+
+      const apiServerUrl = import.meta.env.VITE_API_SERVER_URL;
+      
+      fetch(`${apiServerUrl}/api/trigger-notification`, {
         method: "POST",
         body: JSON.stringify({ uuid: "on-boarding-subscriber-id-123" }),
       })
